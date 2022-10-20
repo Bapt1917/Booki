@@ -1,0 +1,790 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.textegras {
+    font-family: 'Raleway-SemiBold', sans-serif !important; 
+}
+.gras {
+    font-family: 'Raleway-Black', sans-serif;
+}
+
+.fontgras {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*-- Alignements --*/
+
+.alignitemcenter {
+  align-items: center;
+}
+
+.centre {
+  text-align: center;
+  display: inline-grid;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
+
+/*-- Font Size --*/
+
+.fontsize15 {
+  font-size: 15px;
+}
+
+.fontsize14 {
+  font-size: 14px;
+}
+
+.fontsize12 {
+  font-size: 12px;
+}
+
+/*-- Padding --*/
+
+.padding20 {
+  padding: 20px;
+}
+
+.Padding50 {
+  padding:50px;
+}
+
+.paddingtop10{
+  padding-top:10px;
+}
+
+.paddingbottom10{
+  padding-bottom: 10px;
+}
+
+.paddingbottom20{
+  padding-bottom: 20px;
+}
+
+/*-- Couleurs --*/
+
+.bleu {
+      /* bleu de la charte graphique */
+  color:#0065FC
+}
+
+.bleu-pale {
+    /* bleu pale de la charte graphique */
+  color: #DEEBFF;
+}
+
+.gris {
+  /* Gris de la charte graphique */
+  color: #F2F2F2;
+}
+
+.grisfonc {
+  /* est utilisé pour les étoiles des carte */
+  color: rgb(162, 162, 162);
+}
+
+.backgris {
+    /* Gris de la charte graphique pur les arrière plan*/
+  background-color: #f2f2f2;
+}
+/*-- Marges --*/
+
+.margintop20 {
+  margin-top:20px;
+}
+
+.marginleft20 {
+  margin-left:20px;
+}
+
+.marginleft14 {
+  margin-left:14px;
+}
+
+.marginleft50 {
+  margin-left:50px;
+}
+.marginbottom20 {
+  margin-bottom:20px;
+}
+
+.marginbottom10 {
+  margin-bottom:10px;
+}
+
+.margereduite{
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.mar {
+  margin: 30px;
+}
+
+.martop100 {
+  margin-top: 100px;
+}
+
+.marginleft5{
+  margin-left: 5px;
+}
+
+.marginactiv {
+  margin:40px 0px 20px 0px;
+}
+
+/*-- Radius --*/
+.photoradius {
+  border-radius: 20px 20px 0Px 0px;
+}
+
+.radius20 {
+  border-radius: 20px;
+}
+
+/* -- Mise en valeur des liens --*/
+a:hover {
+  color:#0065FC;
+  transform: scale(1.05);
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+
+/*-- FLEXBOX Début--*/
+
+.displayflex {
+  display:flex
+}
+
+.flexaround {
+  display : flex;
+  justify-content : space-around;
+  align-items: flex-start;
+}
+
+.flexbetween {
+display : flex;
+justify-content : space-between;
+align-items: center;
+}
+
+.flexevenly {
+  /* disposition des cartes hébergement */
+  display : flex;
+  justify-content : space-evenly;
+  align-items: center;
+  }
+
+.flexcentre {
+  display : flex;
+ justify-content :center;
+ align-items: center;
+}
+/*-- FLEXBOX FIN --*/
+
+
+/*-- FLEXBOX COLUM Début--*/
+
+.flexcolumaround {
+  display : flex;
+  flex-direction: column;
+  justify-content : space-around;
+}
+
+.flexColumBetween {
+display : flex;
+flex-direction: column;
+justify-content : space-between;
+}
+
+.flexColumCentre {
+  display : flex;
+  flex-direction: column;
+ justify-content :center;
+ align-items: center;
+}
+/*-- FLEXBOX FIN --*/
+
+/* -- Début du site Web --*/
+
+/*-- HEADER Début--*/
+
+/*-- Logo :--*/
+.logo {
+    /* Taille différente sur mobile */
+      margin-left:50px;
+      width:120px;
+      height:50px;
+}
+
+/*-- Liens Nav en haut à droite --*/
+.nav {
+  /* Disposition & Style des éléments "hébergements" et "Activités" sur Desktop */
+  display :flex;
+  float:right; 
+   text-decoration: none;
+  color:black;
+  margin:0px 20px 15px 20px;
+  } 
+
+  .nav1, .nav2 {
+    padding-top: 25px;
+}
+
+.nav1 {
+  margin-right: 15px;
+}
+
+
+.nav1:hover {
+  /*Mise en valeur des liens surlignement pour DESKTOP*/
+ color: #0065FC;
+  border-top: 4px solid #0065FC;
+  border-bottom: 0px solid white;
+  padding-left: 15px;
+}
+
+.nav2:hover {
+  /*Mise en valeur des liens surlignement pour DESKTOP*/
+ color: #0065FC;
+  border-top: 4px solid #0065FC;
+  border-bottom: 0px solid white;
+  padding-left: 15px;
+}
+/* Titre */
+
+.margintoptitre {
+  margin-top :20px;
+}
+/*-- Filtres --*/
+.responsivfilters {
+  /* -- Garde l'élément "Filtres" correctement placé en fontion des tailles d'écran -- */
+  flex-wrap: wrap;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+  margin-top: 7px;
+}
+
+.filters .title{
+  height: 20px;
+  display: flex;
+  margin-left: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Largeur personalisée de chaque filtre*/
+
+.filters-b {
+  /*Economique*/
+  min-width: 180px;
+}
+
+.filters-c {
+  /*Familial*/
+  min-width: 150px;
+}
+
+.filters-d {
+  /*Romantique*/
+  min-width: 180px;
+}
+
+.filters-e {
+  /*Animaux acceptés*/
+  min-width: 230px;
+}
+
+.fbleu {
+  /* Style des îcones des filtres */
+  color: #0065FC;
+  font-size: 20px;
+  background-color: #DEEBFF;
+  border-radius: 100px;
+  width: 50px;
+  height:50px;
+  margin-left: -1px;
+}
+
+.bordurefiltre {
+  /* Bordure des filtres */
+ border:1px solid rgb(205, 205, 206);
+ border-radius: 27px;
+ margin-left: 15px;
+ height: 48px;
+}
+
+.espace10 {
+  /* Espace entre les îcones des filtres et le texte*/
+  text-indent: 10px;
+}
+
+/*-- Bloc de recherche Marseille --*/
+.box {
+  /* Mise en page de l'îcone */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.champderecherche {
+  /* Style du champs de recherche */
+  height:50px;
+  width: 218px;
+  font-size: 18px;
+  color:black;
+  font-family: "Raleway";
+  font-weight:bold;
+  text-indent: 5px;
+  border: 1px solid #f2f2f2;
+}
+
+.btn {
+  /* Style du boutton recherche & Loupe */
+  height:50px;
+  width:140px;
+  color: white;
+  font-weight: bolder;
+  font-size: 18px;
+  background-color:#0065FC;
+  padding-left: 13px;
+  border-radius: 0px 10px 10px 0px;
+  border: #0065FC;
+  font-family: 'Raleway';
+}
+
+
+.loupe .fa-magnifying-glass {
+  /* alignement de la loupe et du texte "Rechercher"*/
+  display: inline;
+}
+
+
+/*-- Plus de 500 Logments disponibles dans cette ville --*/
+
+.fa-info {
+  /* îcone "I" , pas dispo sur Fontawesome. autre icone gratuit prit et custom pour l'occasion */
+  width:30px;
+  height: 30px;
+  font-size:15px;
+  margin-left: 10px;
+  margin-right: 5px; 
+  color:#0065FC; 
+  border-radius: 100%; 
+  border: 3px solid #F2F2F2;
+}
+
+.text500 {
+  /*Disposition du texte " 500 logements disponibles" */
+  text-indent: 5px;
+  align-items: center;
+}
+
+
+/*-- Section Hébergement & Populaire DEBUT --*/
+/*-- hébergement --*/
+.blochebergement {
+  /* Taille et style du bloc gris qui entoure les cartes */
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 14px;
+padding-bottom: 45px;
+max-width: 2000px;
+width:65%;
+}
+
+.csscartesheberg {
+  /* Style des cartes hebergements */
+  padding:4px;
+  height: auto;
+  background-color: white;
+  border-radius: 20px;
+  width:30%;
+  box-shadow: 3px 3px 3px 3px rgb(187, 187, 187);
+  margin-bottom: 18px;
+  margin-top: 10px;
+  max-width: 700px;
+}
+
+.textescarteshebergement {
+  /* Disposition des textes des cartes hébergement */
+  padding-left: 3px;
+  padding-bottom: 5px;
+  border-radius: 0px 0px 20Px 20px;
+}
+
+.espacescartes {
+  /* Disposition et espace entre les  cartes hébergements */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 5px 10px 25px 10px;
+}
+
+/* -- Galerie Photos Début --*/
+
+.photohebergement {
+  background-size: cover;
+  background-position: center;
+  width:100%; 
+  height:110px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+/*--populaire début--*/
+.blocpopulaire {
+  /* Bloc qui entoure les cartes Populaires */
+  background-color: #F2F2F2;
+  border-radius: 20px;
+  margin-left:1%;/*10px*/
+  width:29%;
+  max-width: 800px;
+}
+
+.titrepopstar{
+  /* Titre : Les plus poplaires avec l'étoile */
+  display: flex; 
+  flex-direction: row; 
+  justify-content:space-between; 
+  align-items: center
+}
+
+.csscartespopulaire {
+    /* Style des cartes populaires */
+  background-color: white;
+  height: 134px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px rgb(187, 187, 187);
+  margin-bottom: 30px;
+  margin-top: 12px;
+  display: flex;
+  width : 99%;
+  align-content: center;
+  padding:0px;
+}
+
+
+
+.paddingblocpopulaire {
+  /* Padding du bloc populaire pour une bonne mise en page */
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 18px; /*40*/
+padding-bottom: 4px;
+}
+
+.margesetoiles {
+  /* Disposition des étoiles dans les cartes populaires */
+  margin-top: 50px;
+    margin-left: 5px;
+}
+
+.card-image {
+  /* style des photos Populaires */
+  border-radius: 20px 0px 0px 20px;
+  background-size: cover;
+  background-position: center;
+  border: 5px solid white;
+  height: auto;
+  width:250px;
+  position: relative;
+  overflow:hidden;
+  box-shadow: 1px 1px 1px white;
+}
+
+.corpsdetextepopulaire {
+  /*style du textes des cartes populaires */
+  padding: 0px 2px; 
+  box-sizing: border-box; 
+  background-color: white;
+  border-radius: 0px 20px 20px 0px;
+  box-shadow: 1px 1px 1px white;
+  font-size: 13px;
+  width: 100%;
+}
+/* Afficher plus */
+.margeaffich {
+  margin-left:17px;
+}
+/*-- CARTES Activités --*/
+.margeactiv {
+  margin:30px;
+}
+
+.flexcolumnarroundactivites {
+  /*disposition des cartes Activités*/
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+height: 500px; /*700px*/
+width:100%;
+align-content: space-between;
+}
+
+.tailleactivites14{
+  /* tailles des cartes 1 et 4 sur Desktop*/
+  width:26%;
+  height:100%;
+}
+
+.tailleactivites2356{
+  /* tailles des cartes 2,3,5,6 sur Desktop*/
+  width:22%; 
+  height:50%;
+}
+
+ /*-- CARTES Activités 1--*/
+
+.csscartesactiv {
+  /* style des cartes activités */
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px rgb(187, 187, 187);
+
+}
+
+.photoactiv14 {
+  /* style photo activité 1 */
+  background-size: cover;
+  background-position: center;
+  width:100%;/*100%*/
+  height:382px; /*382px*/
+  border-radius: 15px 15px 0px 0px;
+
+}
+
+.photoactiv2356 {
+  /* style photo activité 2 */
+  background-size: cover;
+  background-position: center;
+  width:100%;
+  height:130px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+/* -- CARTES Activités Fin --*
+-----------------------------------------
+/*-- FOOTER Début --*/
+
+.flexcolumaroundfooter {
+    /* disposition et alignement des éléments footer */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}  
+
+.flexcolumbetweenfooter{
+  /* disposition et alignement des éléments footer */
+  display : flex;
+  flex-direction: column;
+  }
+
+.titrefooter {
+  /* style des titres  footer*/
+  font-family:'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+.liensfooter {
+  /* style des liens footer */
+margin-bottom: 20px;
+font-size: 18px;
+font-weight: 300;
+font-family: 'Raleway-ExtraLight', sans-serif
+}
+
+.liensfooter:hover {
+  /* mise en valeur des liens dans le footer */
+  color:#0065FC
+}
+
+/*-- FOOTER Fin --*/
+
+/*-- Media Querys--*/
+
+@media only screen and (min-width: 799px) {
+  /* L'îcone loupe disparait au dessus de 799px */
+.fa-magnifying-glass:before {
+  display:none;}
+}
+
+
+/*-- Filtres --*/
+@media screen and (min-width: 399px) {
+  .responsivfilters {
+    /* Garde la disposition des filtres selon la taille de l'écran */
+    display: flex;
+} 
+}
+
+/*-- LOGO--*/
+/* VERSION Mobile-Tablette */
+@media screen and (max-width:799px){
+  .logo {
+    /* Alignement sur mobile */
+  margin-left:40%;  }
+
+/*-- NAV en haut à droite --*/
+
+  .navborder{
+    /* Bordures grises en bas sur mobile */
+    border-bottom: 3px solid #F2F2F2;
+  }
+
+  .nav1:hover {
+  /*SOULIGNEMENT EN BAS POUR MOBILE*/
+  border-top: 0px solid white;
+  border-bottom: 3px solid #0065FC;
+  } 
+
+  .nav2:hover {
+  /*SOULIGNEMENT EN BAS POUR MOBILE*/
+  border-top: 0px solid white;
+  border-bottom: 3px solid #0065FC;
+  } 
+
+  .nav{
+    /* disposition des nav sur mobile */
+  justify-content: center;
+  width:100%;
+  padding-right: 0px;
+  margin: 0px;} 
+
+  .nav1, .nav2 {
+    padding-top: 0px;
+}
+
+/* TITRE */
+  .margintoptitre {
+    margin-top: 70px
+  }
+/*-- Bloc de recherche --*/
+/* le mot "rechercher" disparait en dessous de 799px */
+  .texte {
+     display: none;
+   }
+
+  .btn{
+  /* la taille du bouton contenant rechercher et la loupe change en fonction de la taille de l'écran */
+    width:50px;
+    border-radius: 10px 10px 10px 10px;
+    padding-left: 5px;
+  }
+
+/*-- Footer -- */
+  .flexcolumaroundfooter {
+/* Les éléments du footer se mettent en colonne sur mobile*/
+    display : flex;
+    flex-direction: column;
+  }
+}
+
+/* -- MAX WIDTH 990 PX Début -- */
+@media screen and (max-width:990px) {
+  .marginbottommobile {
+/* une marge apparait en dessous de 990px pour des raisons esthétiques */
+margin-bottom: 20px;
+  }
+
+/*-- Hébergement à Marseille  Column reverse--*/
+  .flexaround {
+/* L'ordre des blocs hébergement et populaires s'inverse sur mobile en dessous de 990px */
+    flex-direction: column-reverse;
+    display : flex;
+    justify-content :center;
+    align-items: center; 
+  }
+
+  .flexbetween {
+    flex-direction: row; 
+    justify-content: space-around;
+  }
+
+  .flexevenly {
+/* Les cartes hébergement se mettent en colonne sur mobile */
+    flex-direction: row; 
+    justify-content: space-around;
+  }
+
+/*-- Hébergement à Marseille --*/
+  .arriereplanhebergement {
+/* le style du bloc hébergement change sur mobile */
+    margin: 0px;
+    padding-left: 0px;
+    Padding-right:0px;
+    background-color: white;
+    width:100%;
+}
+  .csscartesheberg {
+    /* La taille des cartes hébergement change sur mobile */
+    width : 350px;
+    align-content: center;
+    padding:0px;
+  }  
+  
+.textescarteshebergement{
+/* Le texte des cartes hébergement change sur mobile */
+  padding-left: 30px;
+}
+/*-- Les plus populaires Column reverse --*/
+
+  .blocpopulaire {
+/* Le bloc populaire change sur mobile */
+    margin: 0px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px;
+    width: 100%;
+  }
+
+/*--Activités--*/
+/* Les carte Activités changent sur mobile */
+.flexcolumnarroundactivites {
+    flex-direction: row;
+    justify-content: space-around;
+    height:auto;
+  }  
+.tailleactivites14, .tailleactivites2356{
+/* tailles des cartes activités sur mobile*/
+  width:350px;
+  height:auto;
+}
+ /* Photos activités */ 
+  .photoactiv14{
+/*la hauteur des carte Activités change sur mobile */
+    height: 160px;}
+  
+  .photoactiv2356{
+    height: 160px;}
+  
+}
+/* -- MAX WIDTH 990 PX fin -- */
+
+@media screen and (max-width:799px){
+  .tailleactivites14, .tailleactivites2356, .csscartesheberg{
+    /* tailles des cartes activités & hébergements sur mobile*/
+      width:100%;
+      height:auto;
+      margin:10px 20px 10px 20px;
+    }
+
+    .margeactiv {
+      margin-left:20px;
+    }
+} 
+
+
